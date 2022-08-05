@@ -1,0 +1,184 @@
+.page-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+  gap: 25px;
+}
+.row__product{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  transition: .3s ease;
+  overflow-y: hidden;
+  border-radius: 10px;
+}
+.page-content:nth-child(1) .row:nth-child(1)  .row__product:nth-child(3), .page-content:nth-child(1) .row:nth-child(2)  .row__product:nth-child(2){
+position: relative;
+}
+
+.page-content:nth-child(1) .row:nth-child(1) .row__product:nth-child(3)::after, .page-content:nth-child(1) .row:nth-child(2) .row__product:nth-child(2)::after{
+  position: absolute;
+  content: 'Exclusivo';
+  top: 0;
+  right: 0px;
+  height: auto;
+  background-color: #128C7E;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0,0.25);
+  text-align: center;
+  color: var(--color-cuarto);
+  font-weight: bolder;
+  border-bottom-left-radius: 10px;
+  padding: 2px 25px;
+  transition: .2s linear;
+}
+
+.page-content:nth-child(1) .row:nth-child(1) .row__product:nth-child(3)::before, .page-content:nth-child(1) .row:nth-child(2) .row__product:nth-child(2)::before{
+  position: absolute;
+  content: '';
+  top: 28px;
+  right: 0px;
+  border-top: 5px solid #128C7E;
+  border-left: 5px solid transparent;
+  border-right: 5px solid #128C7E;
+  border-bottom: 5px solid transparent;
+  z-index: 4;
+}
+
+.page-content:nth-child(1) .row:nth-child(1) .row__product:nth-child(3)::before{
+  position: absolute;
+  content: '';
+  top: 28px;
+  right: 0px;
+  border-top: 5px solid #128C7E;
+  border-left: 5px solid transparent;
+  border-right: 5px solid #128C7E;
+  border-bottom: 5px solid transparent;
+  z-index: 4;
+}
+.row__product:hover{
+  box-shadow: 0px 10px 15px rgba(0, 0, 0,0.25);
+}
+.row__product:hover .product__img{
+  transform: scale(0.9);
+  transition: .3s linear;
+
+}
+.row__product .product__img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: .3s linear;
+}
+.product__content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+.product__content .product__efect{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: 1s linear;
+  padding:  0 5px;
+}
+
+.product__efect .product__link{
+  text-decoration: none;
+  color: var(--color-quinto);
+  font-weight: bold;
+  transition: .2s linear;
+  text-align: center;
+}
+.product__content .product__quote{
+transform: translateY(50%);
+transition: .2s linear;
+text-decoration: none;
+color: var(--color-quinto);
+font-weight: bold;
+}
+.product__efect:hover .product__link{
+  transform: translateY(-100%);
+  transition: .3s linear;
+}
+.product__efect:hover .product__quote{
+  transform: translateY(-100%);
+  transition: .3s linear;
+  color: #191919;
+}
+.product__content .icons-stars{
+  margin-top: 2px;
+}
+.product__content .icons-stars i{
+  color: var(--color-secundario);
+  font-size: 12px;
+  transition: .2s ease;
+}
+.product__content .icons-stars i:hover{
+  color: #f1c263;
+}
+.tabs {
+  display: inline-flex;
+  justify-content: flex-end;
+  /* background: var(--color-cuarto); */
+  list-style: none;
+  margin: 20px auto 20px auto;
+  transform: translateX(50%);
+  box-shadow: 5px 5px 5px #24242452;
+}
+.tabs li {
+  transition: 0.5s ease all;
+  background-color: #dfd2db;
+
+}
+.tabs li.active{
+  background: linear-gradient(#3f0531, #2c182795) !important;
+}
+.tabs .active a{
+  color: #f1f1f1 !important;
+}
+.tabs li a{
+  color: #191919 !important;
+}
+.tabs li:hover {
+  /* background: var(--color-quinto); */
+}
+ul.tabs li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  padding: 15px 20px;
+}
+
+ul.tabs li a .tab-text {
+  margin-left: 8px;
+}
+@media (min-width: 720px) {
+  
+  .tabs {
+    float: right;
+    margin-right: 50%;
+
+  }
+
+}

@@ -1,0 +1,10 @@
+main{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #f7f7f7;
+}
+.terminos__h1{
+    margin-bottom: 15px;
+}

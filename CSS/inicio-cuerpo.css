@@ -1,0 +1,428 @@
+
+@import url(variables_generales.css);
+.main{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+}
+.section__main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    justify-content: center;
+    gap: 15px;
+
+    
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+.main__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.main__title .title__hr{
+    width: 100%;
+    max-width: 120px;
+}
+.main__title .title__h2{
+    font-size: var(--subtitulo-android);
+    text-align: center;
+}
+.main__title .title__hr{
+    border: 1px solid var(--color-hr);
+    background-color: var(--color-hr);
+}
+
+.main__blog{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding: 30px 0px;
+    height: auto;
+
+}
+.main__blog > img{
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+}
+.main__blog-absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 15px;
+}
+.main__blog-absolute .blog__row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.blog__contents{
+width: 100%;
+max-width: 500px;
+}
+.blog__contents .column__h2{
+    font-size: var(--subtitulo);
+    color: #191919;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+.blog__contents .column__h2 .highlight-scars{
+    background-color: #128C7E;
+    color: #f1f1f1;
+    font-size: 42px;
+}
+.blog__contents .column__h2 .highlight-burn{
+    background-color: var(--color-secundario);
+    color: #f1f1f1;
+    font-size: 42px;
+}
+.blog__contents .column__paragraph{
+    max-width: 320px;
+    font-size: 16px;
+
+}
+.main__blog-absolute .blog__row:nth-child(2){
+    flex-direction: row-reverse;
+}
+.main__blog-absolute .blog__row img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    display: none !important;
+    opacity: 0;
+
+}
+.blog__row .blog__contents{
+    max-width: 400px;
+}
+.blog__button{
+display: flex;
+justify-content: center;
+}
+.blog__button .button-link-blog{
+    text-decoration: none;
+    color: var(--color-secundario);
+    padding: 10px 25px;
+    border: 2px solid var(--color-secundario);
+    font-size: 16px;
+    transition: .3s linear;
+}
+.blog__button .button-link-blog:hover{
+    background: rgba(104, 80, 92, 0.596);
+    color: #fff;
+    box-shadow: 0px 7px 20px rgba(104, 80, 92, 0.596);
+}
+
+
+.section__main .boxes .box-content{
+    display: flex;
+}
+.container-product{
+    padding: 60px 0;
+    overflow: hidden;
+
+}
+.product__title{
+margin-bottom: 40px;
+}
+.product__title .title__h2{
+text-align: center;
+margin-bottom: 10px;
+}
+.product__title .title__hr{
+    width: 100%;
+    max-width: 120px;
+    margin: 0 auto;
+    border: 1px solid var(--color-hr);
+    background-color: var(--color-hr);
+}
+.list-product{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+.list-product .product-column{
+    display: flex;
+    flex-direction: column;
+}
+.product-column .column__img{
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.column__img img{
+    transform: scale(1);
+    transition: .3s ease;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.column__img img:hover{
+    transform: scale(1.1);
+}
+.column-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 10px;
+    background-color: #c58abc;
+    text-decoration: none;
+    animation: 3s color infinite;
+}
+@keyframes color{
+    from{
+        background-color: #c58abc;
+    }
+    to{
+        background-color: #a77b93;
+    }
+}
+.column-bottom:hover{
+    animation: none;
+}
+.column-bottom .bottom__h3{
+    font-size: 14px;
+    color: #fff;
+    transition: .3s linear;
+}
+.column-bottom:hover .bottom__h3, .column-bottom:hover i{
+    color: var(--color-quinto);
+}
+
+.column-bottom i{
+    color: #Fff;
+    font-size: 16px;
+    transition: .3s linear;
+
+}
+.product__button{
+    display: flex;
+    margin: 40px 0 0 0;
+    width: 100%;
+    justify-content: center;
+}
+.product__button .button-shop{
+    text-decoration: none;
+    color: var(--color-secundario);
+    padding: 10px 25px;
+    border: 2px solid var(--color-secundario);
+    font-size: 16px;
+    transition: .3s linear;
+
+}
+.button-shop:hover{
+    background: rgba(104, 80, 92, 0.596);
+    color: #fff;
+    box-shadow: 0px 7px 20px rgba(104, 80, 92, 0.596);
+}
+/*Sobre Nosotros*/
+
+.about-index{
+    max-width: 1400px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 40px 0 80px 0;
+
+}
+.about-index > img{
+    width: 100%;
+    height: auto;
+}
+.about-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+
+}
+.about-main > .about-point:nth-child(1){
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    position: relative;
+}
+.about-main .about-point:nth-child(1) img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+
+}
+.about-main > .about-point:nth-child(1)::before{
+    position: absolute;
+    content: '';
+    top: -30px;
+    left: 30%;
+    width: 80px;
+    height: 80px;
+    background: url(../IMG/NOSOTROS/Quienes-somos/PUNTOS.webp);
+    background-size: 100% 100%;
+
+}
+.about-main > .about-point:nth-child(2){
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    position: relative;
+}
+.about-index::after{
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    right:  10%;
+    background: url(../IMG/NOSOTROS/Quienes-somos/PUNTOS.webp);
+    background-size: 100% 100%;
+    height: 80px;
+    width: 80px;
+}
+.about-main > .about-point:nth-child(2) img{
+    width: 450px;
+    height: 400px;
+    object-fit: cover;
+}
+.about__paragraph{
+    padding: 0 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.about-index .black{
+    color: var(--color-secundario);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 10px;
+
+}
+/*Testimonios*/
+.container-testimonials{
+display: flex;
+flex-direction: column;
+gap: 15px;
+overflow: hidden;
+}
+.testimonials__title{
+margin: 0 auto 40px auto;
+}
+.testimonials__title .title__h2{
+    font-size: var(--subtitulo);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.testimonials__title .title__hr{
+    max-width: 120px;
+    margin: 0 auto;
+    border: 1px solid var(--color-hr);
+}
+.testimonials-video{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.video-column{
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+.video-column iframe{
+    width: inherit;
+    height: inherit;
+}
+#video1, #video2{
+    opacity: 0;
+
+}
+.testimonials__button{
+    display: flex;
+    margin: 40px auto;
+    width: 100%;
+    justify-content: center;
+}
+.testimonials__button .button-youtube{
+    text-decoration: none;
+    color: var(--color-secundario);
+    padding: 10px 25px;
+    border: 2px solid var(--color-secundario);
+    font-size: 16px;
+    transition: .3s linear;
+}
+.button-youtube:hover{
+    background: rgba(104, 80, 92, 0.596);
+    color: #fff;
+    box-shadow: 0px 7px 20px rgba(104, 80, 92, 0.596);
+}
+
+
+
+
+@media (min-width: 768px){
+    .main__title .title__h2{
+        font-size: var(--subtitulo);
+    }
+    .boxes{
+        gap: 0px;
+        padding: 40px 0;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-content .paragraph{
+        font-size: 16px;
+    }
+    .product__title{
+        margin-bottom: 60px;
+        }
+        .blog__contents .column__h2{
+            margin-bottom: 20px;
+            font-size: 42px;
+        }
+        .blog__contents .column__h2 .highlight-scars{
+            font-size: 65px;
+        }
+        .blog__contents .column__h2 .highlight-burn{
+            font-size: 65px;
+        }
+        .main__blog > img{
+            height: 1000px;
+            display: block;
+        }
+        .main__blog-absolute .blog__row img{
+            display: block !important;
+        }
+        .about__paragraph{
+            margin-bottom: 0;
+        }
+}

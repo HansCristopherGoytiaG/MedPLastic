@@ -1,0 +1,223 @@
+html{
+    background-color: #f7f7f7 !important;
+}
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.header-container{
+    width: 100%;
+    height: 500px;
+    background: url('../IMG/INICIO/banner-tienda/Tienda.png')fixed ;
+    background-size: 100% 100%;
+    background-position: 0%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-container::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.4);
+}
+.triangle-banner{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.header-container h1{
+    color: #f1f1f1;
+    z-index: 1;
+    font-size: 22px;
+    animation: .7s movimiento-bottom linear;
+    max-width: 900px;
+    text-align: center;
+}
+
+/*Información de contacto*/
+.contact-bar{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    width: 100%;
+    max-width: 700px;
+    justify-content: center;
+    margin: 40px 0;
+}
+.bar__box{
+    width: 100%;
+    max-width: 200px;
+    background: linear-gradient(#ba93ba, #764768);
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 50px;
+    transition: height .3s linear;
+}
+.bar__box:hover{
+    height: 130px;
+}
+.bar__box div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bar__box div:nth-child(2) .box__h4{
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+.bar__box .box__icon{
+    margin-bottom: 5px;
+}
+.bar__box .box__icon i{
+    font-size: 22px;
+    color: #f1f1f1;
+}
+.bar__box div:nth-child(2) .box__link{
+font-size: 13px;
+color: #f1f1f1;
+text-decoration: none;
+text-align: center;
+}
+
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-contact{
+width: 100%;
+max-width: 500px;
+margin: 40px 0;
+}
+.box__input{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 10px;
+    background: #fff;
+    transition: .1s linear;
+}
+.form textarea{
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    max-height: 250px;
+    margin-bottom: 10px;
+    transition: .1s linear;
+    border: 0;
+    color: var(--color-quinto);
+}
+.box__input:hover,textarea:hover{
+    background-color: #f1f1f1;
+}
+.box__input:hover .input__icon{
+    color: var(--color-quinto);
+}
+.box__input:hover .input::placeholder{
+    color: var(--color-quinto);
+}
+textarea:hover::placeholder{
+    color: var(--color-quinto);
+
+}
+.box__input .input{
+    width: inherit;
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    outline: none;
+    color: var(--color-quinto);
+
+}
+
+.box__input .input__icon{
+    color: #7e7e7e;
+}
+.button-send{
+    display: inline;
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
+    border: 0px;
+    padding: 15px 25px;
+    background-color: var(--color-quinto);
+    color: #f1f1f1;
+    cursor: pointer;
+}
+@media(min-width: 768px){
+    .header-container h1{
+        font-size: 36px;
+    }
+    .contact-bar{
+        margin: 80px 0 40px 0;
+
+    }
+}
+@media(min-width: 1024px){
+    .header-container h1{
+        font-size: 58px;
+    }
+}
+
+/*-------------------------Encabezados------------------------*/
+
+.header-container{
+    background: url('../IMG/BLOG/fondoooo.jpg')fixed;
+    background-size: 100% 100%;
+
+}
+.header-contacto{
+    background: url('../IMG/CONTACTO/banner-contacto.webp')fixed;
+    background-size: 100% 100%;
+}
+.header-tienda{
+    background: url('../IMG/INICIO/banner-tienda/Tienda.png')fixed;
+    background-size: 100% 100%;
+}
+
+.header-quemaduras{
+    background: url('../IMG/FONDOS_BANNER/FONDOS_PRINCIPAL/banner-quemaduras.jpg')fixed;
+    background-size: 100% 100%;
+}
+.header-heridas{
+    background: url('../IMG/FONDOS_BANNER/FONDOS_PRINCIPAL/banner-heridas.jpg')fixed;
+    background-size: 100% 100%;
+    
+}
+.header-cicatrices{
+    background: url('../IMG/FONDOS_BANNER/FONDOS_PRINCIPAL/banner-quemaduras.jpg')fixed;
+    background-size: 100% 100%;
+}
+.header-piel{
+    background: url('../IMG/FONDOS_BANNER/FONDOS_PRINCIPAL/banner-tiposdepiel.jpg')fixed;
+    background-size: 100% 100%;
+    
+}
+.header-nosotros{
+    background: url('../IMG/NOSOTROS/MedPlastic_Nosotros3.jpg')fixed;
+    background-size: 100% 100%;
+}
+.header-scar{
+    background: url('../IMG/BLOG/scarmd/scarmdfondoblog.webp');
+    background-attachment: fixed;
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+
+
+}

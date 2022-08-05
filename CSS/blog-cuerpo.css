@@ -1,0 +1,199 @@
+
+.main-blog{
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1400px;
+}
+.blog__column{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 135px;
+    margin-bottom: 40px;
+}
+.blog__column .article__blog{
+    width: 100%;
+    max-width: 300px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.blog__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.blog__title .span{
+    font-weight: bold;
+    font-size: 14px;
+}
+.article__blog .highlight{
+    background: var(--color-secundario);
+    color: #f1f1f1;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.article__blog .highlight i{
+    font-size: 14px;
+}
+.article__blog:nth-child(1) .highlight,.article__blog:nth-child(4) .highlight {
+    background-color: #128C7E;
+    transition: .2s linear;
+}
+.article__blog:nth-child(2) .highlight:hover, .article__blog:nth-child(3) .highlight:hover{
+    transition: .2s linear;
+    box-shadow: 0px 10px 15px #8a6c8a7a;
+
+}
+.article__blog:nth-child(2) .highlight:hover, .article__blog:nth-child(3) .highlight:hover{
+    box-shadow: 0px 10px 15px #ba93ba66;
+
+}
+.article__blog:nth-child(1) .highlight:hover, .article__blog:nth-child(4) .highlight:hover{
+    box-shadow: 0px 10px 15px #128c7e64;
+
+}
+.blog__column .article__blog .blog__header-img{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+}
+.blog__column .article__blog .blog__header-img img{
+    width: inherit;
+    height: inherit;
+}
+.column-scarmd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 700px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #072641;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+.column-scarmd::before{
+    position: absolute;
+    content: '';
+    top: -30px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+    background: url(../IMG/BLOG/Group-star__after.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.column-scarmd::after{
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    right: -30px;
+    width: 80px;
+    height: 80px;
+    background: url(../IMG/BLOG/Group-star__after.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%  ;
+}
+.column-scarmd .img-logo-scarmd{
+
+    width: 100%;
+    max-width: 180px;
+    height: 70px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.column-scarmd .scarmd__container{
+    margin: 0 auto 15px auto;
+    width: auto;
+    height: auto;
+}
+.scarmd__container .product{
+    width: 100%;
+    max-width: 220px;
+    height: 300px;
+    object-fit: cover;
+}
+.scarmd__h4{
+    font-size: 18px;
+    text-align: center;
+    max-width: 320px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+.scarmd__h4 .maximize{
+    font-size: 22px;
+    color: #072641;
+    text-transform: uppercase;
+}
+.group__button-scarmd{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.group__button-scarmd .button__quote{
+    text-decoration: none;
+    color: #f1f1f1;
+    background-color: #072641;
+    padding: 10px 60px;
+    font-size: 16px;
+    transition: .3s linear;
+}
+.group__button-scarmd .button__quote:hover{
+    background-color: #133a5c;
+    transform: scale(0.9);
+}
+.group__button-scarmd .button__information{
+    color: #072641;
+    font-size: 14px;
+    transition: .3s linear;
+}
+.group__button-scarmd .button__information:hover{
+    color: #0c406d;
+
+}
+
+@media(min-width:720px){
+    .blog__title .span{
+        font-size: 22px;
+    }
+    .article__blog .highlight{
+        background: var(--color-secundario);
+        color: #f1f1f1;
+        font-size: 36px;
+        text-align: center;
+    }
+    .article__blog .highlight i{
+        font-size: 20px;
+    }
+    .scarmd__h4{
+        font-size: 24px;
+    }
+    .scarmd__h4 .maximize{
+        font-size: 32px;
+    }
+    .group__button-scarmd{
+        gap: 20px;
+    }
+.group__button-scarmd .button__quote{
+    font-size: 18px;
+    font-weight: bold;
+}
+.group__button-scarmd .button__information{
+    font-size: 16px;
+}
+}

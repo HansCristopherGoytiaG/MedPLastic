@@ -1,0 +1,34 @@
+RewriteEngine On
+RewriteRule ^inicio/?$ index.html
+RewriteRule ^terminos-condiciones/?$ terminos-condiciones.html
+RewriteRule ^quienes-somos/?$ nosotros.html
+RewriteRule ^tienda/?$ tienda.html
+RewriteRule ^contacto/?$ contacto.html
+RewriteRule ^blog/?$ blog.html
+RewriteRule ^jabon-dermolimpiador/?$ jabon_dermolipador.html
+RewriteRule ^barra-silicona-medicada/?$ barra_silicona.html
+RewriteRule ^lamina-de-silicona/?$ lamina_silicona.html
+RewriteRule ^scarmd-gel/?$ scar_md.html
+RewriteRule ^dhermux-hidrax60gr/?$ dhermux.html
+RewriteRule ^dhermux-hidrax120gr/?$ dhermux120.html
+RewriteRule ^regenerador-de-tejidos/?$ reconstituyente_tejidos.html
+RewriteRule ^regenerador-de-tejidos60gr/?$ formula_reconstituyente_tubo.html
+RewriteRule ^articulo-scarmd/?$ scarMD_blog.html
+RewriteRule ^exfoliex/?$ exfoliex.html
+RewriteRule ^scarmd-masajeador/?$ scar_masajeador.html
+RewriteRule ^scarfade/?$ scarfade.html
+RewriteRule ^silvercare/?$ silvercare.html
+RewriteRule ^tipos-de-quemaduras/?$ quemaduras.html
+RewriteRule ^tipos-de-piel/?$ tipos_piel.html
+RewriteRule ^tipos-de-cicatrices/?$ cicatrices.html
+RewriteRule ^tipos-de-heridas/?$ heridas.html
+RewriteRule ^xeragel/?$ xeragel.html
+RewriteRule ^bloqueador-formulado/?$ bloqueador_formulado.html
+RewriteRule ^silicona-medicada/?$ silicona_medicada.html
+RewriteRule ^lumed/?$ lumed.html
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+# Header always set Content-Security-Policy "upgrade-insecure-requests;"
+# DirectoryIndex index.html
+
+

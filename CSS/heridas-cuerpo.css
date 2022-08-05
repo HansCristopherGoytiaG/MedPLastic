@@ -1,0 +1,73 @@
+.main__types-injury{
+    width: 100%;
+    max-width: 1440px;
+    margin: 60px auto;
+}
+.main__types-injury .types-injury__columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.main__types-injury .types-injury__columns:nth-child(2),.main__types-injury .types-injury__columns:nth-child(4), .main__types-injury .types-injury__columns:nth-child(6){
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.types-injury__columns .types-injury__column:nth-child(1){
+    max-width: 500px;
+    height: auto;
+    padding: 20px 15px;
+}
+.types-injury__columns .types-injury__column:nth-child(1) .column__title{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.types-injury__columns .types-injury__column:nth-child(1) .title__h2{
+    font-size: 18px;
+}
+.types-injury__columns .types-injury__column:nth-child(2),.types-injury__columns .types-injury__column:nth-child(4), .types-injury__columns .types-injury__column:nth-child(6){
+display: none;
+}
+
+.types-injury__columns .types-injury__column:nth-child(2) video{
+    width: 100%;
+    height: auto;
+}
+.types-injury__columns .types-injury__column:nth-child(1) .types-injury__paragraph{
+    font-size: 16px;
+}
+
+.types-injury__column .ul__list{
+margin: 20px 0 10px 0;
+}
+.types-injury__column .ul__list .list__li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.types-injury__column .ul__list .list__li i{
+    color: var(--color-scroll);
+}
+@media(min-width:720px){
+    .types-injury__columns .types-injury__column:nth-child(2){
+        max-width: 300px;
+        height: auto;
+        display: block;
+    }
+    .types-injury__columns .types-injury__column:nth-child(1) .title__h2{
+        font-size: 22px;
+    }
+}
+@media(min-width:1024px){
+    .types-injury__columns .types-injury__column:nth-child(2){
+        max-width: 500px;
+        height: auto;
+        display: block;
+    }
+    .types-injury__columns .types-injury__column:nth-child(1) .title__h2{
+        font-size: 28px;
+    }
+}

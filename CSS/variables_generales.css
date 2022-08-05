@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600&family=Caveat:wght@400;600&family=Spartan:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600&family=Caveat:wght@400;600&family=Mukta:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--titulo-banner: 64px !important;
+--parrafo-banner: 18px;
+--boton: 18px;
+--iconos: 24px;
+--subtitulo: 32px;
+--subtitulo-android: 24px;
+--parrafo-cuerpo: 16px;
+--padding-boton: 11px 32px;
+--color-primario:#3a2d36;
+--color-secundario:#ba93ba;
+--color-tercero:#C08FAA;
+--color-cuarto:#f1f1f1;
+--color-quinto:#572842;
+--color-sexto: #c4c4c4;
+--color-hr: #764768;
+--color-scroll: #3f053195;
+}
+html{
+    font-family: poppins,'san-serif';
+    background:  #f7f7f7 !important;
+}
+h1,h2,h3{
+    font-family: poppins, 'san-serif';
+    font-weight: 500 !important;
+    
+}

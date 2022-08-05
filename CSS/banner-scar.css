@@ -1,0 +1,196 @@
+@import url(variables_generales.css);
+
+.container__main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../IMG/INICIO/banner-scarmd/fondo-superior.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.waveform{
+width: 100%;
+height: 100vh;
+position: absolute;
+right: 0;
+bottom: 0;
+z-index: 5;
+}
+.waveform img{
+    width: inherit;
+    height: inherit;
+
+}
+
+.miSlider .container__main .main__columns{
+    z-index: 9;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    left: 0;
+    bottom: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.miSlider .container__main .main__columns .main__column:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    padding: 0 15px;
+
+}
+.main__column:nth-child(1) .main__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: .9;
+}
+.main__column:nth-child(1) .main__title .title__h2{
+    color: #f1f1f1;
+    font-size: var(--subtitulo);
+    text-align: center;
+
+}
+.main__column:nth-child(1) .main__title .highlight{
+
+    background-color: #128C7E;
+    color: #f1f1f1;
+    font-size: 48px;
+
+}
+.minimize{
+    font-size: var(--parrafo-cuerpo);
+}
+.miSlider .main__columns .main__column:nth-child(2){
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    display: none !important;
+}
+.miSlider .main__columns .main__column img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    animation: .5s movimiento-right-scale linear;
+
+}
+.column__button{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -20px;
+}
+.column__button a{
+    color: #f4f4f4;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.column__button .button__shop{
+    font-size: 16px;
+    transition: .2s;
+    background-color: #128C7E;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: .5s movimiento-bottom linear;
+}
+.column__button .button__shop:hover{
+    background-color: #896f89;
+    color: #f1f1f1;
+}
+.column__button .button__shop:hover .icon-cotizar{
+    fill: #f1f1f1;
+}
+.column__button .button__shop .icon-cotizar{
+    fill: #f4f4f4;
+    width: 15px;
+    height:15px;
+}
+.column__button .button__info{
+    border: 2px solid var(--color-cuarto);
+    transition: .2s background linear;
+    font-size: 16px;
+    animation: .7s movimiento-bottom linear;
+
+}
+.column__button .button__info:hover{
+    background: #0e378f7d;
+    border: 2px solid #0e378f;
+    color: #f1f1f1;
+}
+.main__types{
+    color: #f1f1f1;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 1.6;
+}
+@media(min-width: 768px){
+    .miSlider .container__main .main__columns{
+        gap: 100px;
+        flex-direction: row;
+    }
+    .miSlider .main__columns .main__column:nth-child(1){
+        align-items: flex-start;
+    
+    }
+    .main__column:nth-child(1) .main__title{
+        align-items: flex-start;
+    }
+    .main__column:nth-child(1) .main__title .title__h2{
+        color: #f1f1f1;
+        font-size: var(--titulo-banner);
+        text-align: left;
+    }
+    .main__column:nth-child(1) .main__title .highlight{
+        transform: translateX(5%);
+        font-size: 72px;
+
+    }
+    .miSlider .container__main .main__columns .main__column:nth-child(1){
+        align-items: flex-start;
+    }
+    .column__button{
+
+        justify-content: flex-start;
+
+    }
+    .column__button .button__shop{
+        font-size: 16px;
+    }
+    .column__button .button__info{
+
+        font-size: 16px;
+    }
+    .miSlider .main__columns .main__column:nth-child(2){
+        height: 400px;
+        width: 100%;
+        max-width: 300px;
+        display: block !important;
+    }
+    .miSlider .main__columns .main__column img{
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+    .main__types{
+        text-align: left;
+        transform: translateX(6%);
+    }
+    
+}

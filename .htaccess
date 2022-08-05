@@ -26,9 +26,9 @@ RewriteRule ^xeragel/?$ xeragel.html
 RewriteRule ^bloqueador-formulado/?$ bloqueador_formulado.html
 RewriteRule ^silicona-medicada/?$ silicona_medicada.html
 RewriteRule ^lumed/?$ lumed.html
-# RewriteCond %{HTTPS} !=on
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
-# Header always set Content-Security-Policy "upgrade-insecure-requests;"
-# DirectoryIndex index.html
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+DirectoryIndex index.html
 
 
